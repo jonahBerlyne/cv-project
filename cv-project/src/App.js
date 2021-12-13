@@ -3,7 +3,7 @@
 function App() {
   return (
     <div className="App">
-      {/* Code goes here svp */}
+      Code goes here s'il vous plait
     </div>
   );
 }
