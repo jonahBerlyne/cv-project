@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Education extends React.Component {
- render() { 
+function Education (props) {
 
-  const {cv, onChange} = this.props;
+  const {cv, onChange} = props;
 
-  return <div className="Education">
+  return (
+         <div className="Education">
           <label>College: </label>
           <input type="text" name="college" value={cv.college} onChange={onChange}/>
           <br/>
@@ -22,8 +22,8 @@ class Education extends React.Component {
           <input type="date" name="graduated" value={cv.graduated} onChange={onChange}/>
           <br/>
           <br/>
-         </div>;
- }
+         </div>
+  );
 }
  
 export default Education;

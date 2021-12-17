@@ -1,12 +1,11 @@
 import React from 'react';
 
-class Experience extends React.Component {
+function Experience (props) {
 
- render() {
+  const {cv, onChange} = props;
 
-  const {cv, onChange} = this.props;
-
-  return <div className="Experience">
+  return (
+         <div className="Experience">
           <label>Company: </label>
           <input type="text" name="company" value={cv.company} onChange={onChange}/>
           <br/>
@@ -25,8 +24,8 @@ class Experience extends React.Component {
           <textarea type="text" name="duties" rows="4" cols="50" value={cv.duties} onChange={onChange}/>
           <br/> 
           <br/>
-         </div>;
- }
+         </div>
+  );
 }
  
 export default Experience;

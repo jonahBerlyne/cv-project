@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Overview = state => {
+const Overview = props => {
 
- const { cvs } = state;
+ const { cvs } = props;
 
  return (
   <div>
